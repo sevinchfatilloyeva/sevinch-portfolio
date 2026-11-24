@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sevinch Fatilloyeva — Xalqaro iqtisodiyot · Tadqiqot va Tahlil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rasset: '#7B4B2A',
+            espresso: '#3F2412',
+            oltin: '#E0A94A',
+            oxra: '#8A5A12',
+            shokolad: '#2B1B10',
+            qaymoq: '#FAF7F4',
+            sand: '#F3ECE5',
+            borderwarm: '#E5DDD4',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      background-color: #FAF7F4;
+      color: #2B1B10;
+      font-family: 'Inter', sans-serif;
+    }
+    .uzbek-girih-qaymoq {
+      background-color: #FAF7F4;
+      background-image: url("data:image/svg+xml,%3Csvg width='128' height='128' viewBox='0 0 128 128' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%237B4B2A' stroke-width='0.75' stroke-opacity='0.11'%3E%3Crect x='40' y='40' width='48' height='48'/%3E%3Crect x='40' y='40' width='48' height='48' transform='rotate(45 64 64)'/%3E%3Ccircle cx='64' cy='64' r='11'/%3E%3Ccircle cx='64' cy='64' r='4' stroke='%238A5A12' stroke-opacity='0.16'/%3E%3Cpath d='M64 12v16M64 100v16M12 64h16M100 64h16'/%3E%3Cpath d='M28 28l11 11M89 89l11 11M100 28L89 39M39 89L28 100'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .uzbek-girih-sand {
+      background-color: #F3ECE5;
+      background-image: url("data:image/svg+xml,%3Csvg width='128' height='128' viewBox='0 0 128 128' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%238A5A12' stroke-width='0.75' stroke-opacity='0.12'%3E%3Crect x='40' y='40' width='48' height='48'/%3E%3Crect x='40' y='40' width='48' height='48' transform='rotate(45 64 64)'/%3E%3Ccircle cx='64' cy='64' r='11'/%3E%3Ccircle cx='64' cy='64' r='4' stroke='%237B4B2A' stroke-opacity='0.16'/%3E%3Cpath d='M64 12v16M64 100v16M12 64h16M100 64h16'/%3E%3Cpath d='M28 28l11 11M89 89l11 11M100 28L89 39M39 89L28 100'/%3E%3C/g%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body class="antialiased uzbek-girih-qaymoq selection:bg-rasset selection:text-qaymoq">
+
+  <!-- Navigatsiya -->
+  <header class="sticky top-0 z-40 bg-qaymoq/95 backdrop-blur-md border-b border-borderwarm">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3 group">
+        <svg class="w-9 h-9 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#7B4B2A" stroke="#E0A94A" stroke-width="1.5"/>
+          <path d="M32 15C34.2 15 35.6 17.3 37.6 18.2C39.8 19.2 42.4 18.5 44 20.1C45.6 21.7 44.9 24.3 45.9 26.5C46.8 28.5 49 29.8 49 32C49 34.2 46.8 35.5 45.9 37.5C44.9 39.7 45.6 42.3 44 43.9C42.4 45.5 39.8 44.8 37.6 45.8C35.6 46.7 34.2 49 32 49C29.8 49 28.4 46.7 26.4 45.8C24.2 44.8 21.6 45.5 20 43.9C18.4 42.3 19.1 39.7 18.1 37.5C17.2 35.5 15 34.2 15 32C15 29.8 17.2 28.5 18.1 26.5C19.1 24.3 18.4 21.7 20 20.1C21.6 18.5 24.2 19.2 26.4 18.2C28.4 17.3 29.8 15 32 15Z" fill="#FAF7F4"/>
+          <circle cx="32" cy="32" r="7" fill="#7B4B2A"/>
+          <circle cx="32" cy="32" r="3" fill="#E0A94A"/>
+        </svg>
+        <span class="font-serif italic font-semibold text-lg text-rasset tracking-tight">Sevinch</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm text-shokolad/85">
+        <a href="#haqimda" class="hover:text-rasset transition-colors">Men haqimda</a>
+        <a href="#konikmalar" class="hover:text-rasset transition-colors">Koʻnikmalar</a>
+        <a href="#nashrlar" class="hover:text-rasset transition-colors">Ilmiy maqola</a>
+        <a href="#tajriba" class="hover:text-rasset transition-colors">Tajriba</a>
+        <a href="#aloqa" class="px-4 py-1.5 rounded-full bg-rasset text-qaymoq text-xs font-medium tracking-wide hover:bg-espresso transition-colors">Bogʻlanish</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero bo'limi -->
+  <section id="top" class="py-20 md:py-28 px-6 border-b border-borderwarm">
+    <div class="max-w-3xl mx-auto text-center bg-qaymoq/95 border border-borderwarm rounded-3xl px-6 sm:px-12 py-14 shadow-sm">
+      <div class="inline-flex items-center justify-center mb-7">
+        <svg class="w-16 h-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#7B4B2A" stroke="#E0A94A" stroke-width="1.5"/>
+          <path d="M32 15C34.2 15 35.6 17.3 37.6 18.2C39.8 19.2 42.4 18.5 44 20.1C45.6 21.7 44.9 24.3 45.9 26.5C46.8 28.5 49 29.8 49 32C49 34.2 46.8 35.5 45.9 37.5C44.9 39.7 45.6 42.3 44 43.9C42.4 45.5 39.8 44.8 37.6 45.8C35.6 46.7 34.2 49 32 49C29.8 49 28.4 46.7 26.4 45.8C24.2 44.8 21.6 45.5 20 43.9C18.4 42.3 19.1 39.7 18.1 37.5C17.2 35.5 15 34.2 15 32C15 29.8 17.2 28.5 18.1 26.5C19.1 24.3 18.4 21.7 20 20.1C21.6 18.5 24.2 19.2 26.4 18.2C28.4 17.3 29.8 15 32 15Z" fill="#FAF7F4"/>
+          <circle cx="32" cy="32" r="7" fill="#7B4B2A"/>
+          <circle cx="32" cy="32" r="3" fill="#E0A94A"/>
+        </svg>
+      </div>
+
+      <p class="text-xs uppercase tracking-[0.22em] text-oxra font-semibold mb-3">
+        Xalqaro iqtisodiyot · Tadqiqot · Tahlil
+      </p>
+
+      <h1 class="font-serif italic font-semibold text-4xl sm:text-5xl md:text-6xl text-espresso tracking-tight leading-tight">
+        Sevinch Fatilloyeva
+      </h1>
+
+      <div class="flex items-center justify-center gap-4 my-6">
+        <span class="h-px w-14 bg-rasset/35"></span>
+        <span class="w-2 h-2 rotate-45 bg-oltin"></span>
+        <span class="h-px w-14 bg-rasset/35"></span>
+      </div>
+
+      <blockquote class="max-w-xl mx-auto">
+        <p class="font-serif italic text-xl sm:text-2xl text-rasset leading-relaxed">
+          «Iqtisodiyot — bu faqat raqamlar emas, balki ularning ortida turgan insonlar va ularning imkoniyatlaridir.»
+        </p>
+      </blockquote>
+
+      <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+        <a href="#nashrlar" class="px-6 py-3 rounded-lg bg-rasset text-qaymoq font-medium text-sm hover:bg-espresso transition-colors">
+          Ilmiy maqola bilan tanishish
+        </a>
+        <a href="#aloqa" class="px-6 py-3 rounded-lg border border-borderwarm bg-sand text-espresso font-medium text-sm hover:border-rasset transition-colors">
+          Aloqaga chiqish
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 · Men haqimda -->
+  <section id="haqimda" class="py-20 px-6 border-b border-borderwarm">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.2em] text-oxra font-semibold mb-2">01 · Men haqimda</p>
+      <h2 class="font-serif text-3xl sm:text-4xl text-rasset font-semibold mb-8">
+        Akademik yoʻnalish va tadqiqot qiziqishlari
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 bg-white border border-borderwarm rounded-2xl p-7 shadow-sm">
+          <p class="text-base leading-relaxed text-shokolad/90 mb-4">
+            Men <strong class="font-semibold text-espresso">Sevinch Fatilloyeva</strong> — xalqaro iqtisodiyot, mehnat bozori tahlili hamda ijtimoiy-iqtisodiy jarayonlarni oʻrganishga ixtisoslashgan tadqiqotchi va mutaxassisman.
+          </p>
+          <p class="text-base leading-relaxed text-shokolad/90">
+            Toshkent davlat iqtisodiyot universitetining «Jahon iqtisodiyoti va xalqaro iqtisodiy munosabatlar» kafedrasi doirasida Oʻzbekiston iqtisodiyot tarmoqlarida gender tengligi va mehnat bozoridagi stereotiplar taʼsirini ilmiy-amaliy jihatdan tahlil qilganman. Shu bilan birga, mijozlar bilan muloqot va bank xizmatlari sohasida amaliy tajribaga egaman.
+          </p>
+        </div>
+
+        <div class="bg-sand border border-borderwarm rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-oxra font-semibold">Asosiy yoʻnalishlar</span>
+            <ul class="mt-4 space-y-3 text-sm text-shokolad">
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-rasset mt-2 shrink-0"></span>
+                <span>Xalqaro iqtisodiyot va mehnat bozori tadqiqotlari</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-rasset mt-2 shrink-0"></span>
+                <span>Iqtisodiy va sotsiologik maʼlumotlarni tahlil qilish</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-rasset mt-2 shrink-0"></span>
+                <span>Ishbilarmonlik muloqoti va mijozlarni qoʻllab-quvvatlash</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-borderwarm text-xs text-shokolad/70">
+            Toshkent, Oʻzbekiston
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · Professional ko'nikmalar -->
+  <section id="konikmalar" class="py-20 px-6 border-b border-borderwarm">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.2em] text-oxra font-semibold mb-2">02 · Kompetensiyalar</p>
+      <h2 class="font-serif text-3xl sm:text-4xl text-rasset font-semibold mb-10">
+        Professional koʻnikmalar
+      </h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white border border-borderwarm rounded-2xl p-6 hover:border-rasset/50 transition-colors">
+          <div class="w-8 h-8 rounded-lg bg-sand text-rasset flex items-center justify-center font-serif font-semibold text-sm mb-4">01</div>
+          <h3 class="font-serif italic font-semibold text-lg text-rasset mb-2">Iqtisodiy va sotsiologik tahlil</h3>
+          <p class="text-sm text-shokolad/80 leading-relaxed">
+            Statistik koʻrsatkichlar, xalqaro hisobotlar (Jahon banki, XMT, OTB) va soʻrovnoma natijalarini qiyosiy tahlil qilish.
+          </p>
+        </div>
+
+        <div class="bg-white border border-borderwarm rounded-2xl p-6 hover:border-rasset/50 transition-colors">
+          <div class="w-8 h-8 rounded-lg bg-sand text-rasset flex items-center justify-center font-serif font-semibold text-sm mb-4">02</div>
+          <h3 class="font-serif italic font-semibold text-lg text-rasset mb-2">Ishbilarmonlik muloqoti</h3>
+          <p class="text-sm text-shokolad/80 leading-relaxed">
+            Ogʻzaki va yozma ravishda savodli, aniq hamda xushmuomala kommunikatsiya olib borish koʻnikmasi.
+          </p>
+        </div>
+
+        <div class="bg-white border border-borderwarm rounded-2xl p-6 hover:border-rasset/50 transition-colors">
+          <div class="w-8 h-8 rounded-lg bg-sand text-rasset flex items-center justify-center font-serif font-semibold text-sm mb-4">03</div>
+          <h3 class="font-serif italic font-semibold text-lg text-rasset mb-2">Mijozlar bilan ishlash</h3>
+          <p class="text-sm text-shokolad/80 leading-relaxed">
+            Qoʻngʻiroqlar va onlayn-chatlar orqali murojaatlarni qabul qilish, maslahat berish va xizmat koʻrsatish standartlariga rioya etish.
+          </p>
+        </div>
+
+        <div class="bg-white border border-borderwarm rounded-2xl p-6 hover:border-rasset/50 transition-colors">
+          <div class="w-8 h-8 rounded-lg bg-sand text-rasset flex items-center justify-center font-serif font-semibold text-sm mb-4">04</div>
+          <h3 class="font-serif italic font-semibold text-lg text-rasset mb-2">Muammolarni hal qilish</h3>
+          <p class="text-sm text-shokolad/80 leading-relaxed">
+            Mijozlarda yuzaga kelgan masalalarni tezda tushunish, toʻgʻri maʼlumot taqdim etish va amaliy yechim topish.
+          </p>
+        </div>
+
+        <div class="bg-white border border-borderwarm rounded-2xl p-6 hover:border-rasset/50 transition-colors">
+          <div class="w-8 h-8 rounded-lg bg-sand text-rasset flex items-center justify-center font-serif font-semibold text-sm mb-4">05</div>
+          <h3 class="font-serif italic font-semibold text-lg text-rasset mb-2">Koʻp vazifalilik</h3>
+          <p class="text-sm text-shokolad/80 leading-relaxed">
+            Katta hajmdagi murojaatlar bilan bir vaqtda sifat va aniqlikni saqlagan holda samarali ishlash.
+          </p>
+        </div>
+
+        <div class="bg-white border border-borderwarm rounded-2xl p-6 hover:border-rasset/50 transition-colors">
+          <div class="w-8 h-8 rounded-lg bg-sand text-rasset flex items-center justify-center font-serif font-semibold text-sm mb-4">06</div>
+          <h3 class="font-serif italic font-semibold text-lg text-rasset mb-2">Bank xizmatlari va mahsulotlari</h3>
+          <p class="text-sm text-shokolad/80 leading-relaxed">
+            Zamonaviy raqamli bank mahsulotlari va mijozlarga masofaviy xizmat koʻrsatish jarayonlarini bilish.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · Ilmiy maqola -->
+  <section id="nashrlar" class="py-20 px-6 border-b border-borderwarm uzbek-girih-sand">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.2em] text-oxra font-semibold mb-2">03 · Ilmiy nashr</p>
+      <h2 class="font-serif text-3xl sm:text-4xl text-rasset font-semibold mb-8">
+        Chop etilgan tadqiqot
+      </h2>
+
+      <article class="bg-white border border-borderwarm rounded-2xl p-7 sm:p-9 shadow-sm">
+        <div class="flex flex-wrap items-center gap-2 text-xs text-oxra font-medium mb-3">
+          <span class="px-2.5 py-1 rounded-md bg-sand">«Muhandislik va iqtisodiyot» jurnali</span>
+          <span>·</span>
+          <span>2025-yil, may · № 5-son</span>
+          <span>·</span>
+          <span>710–717-betlar</span>
+        </div>
+
+        <h3 class="font-serif text-2xl sm:text-3xl text-espresso font-semibold leading-snug mb-4">
+          Состояние гендерного равенства в экономических секторах и влияние стереотипов на рынок труда (с фокусом на Узбекистан)
+        </h3>
+
+        <p class="text-sm text-shokolad/75 mb-5">
+          <strong class="text-shokolad font-medium">Mualliflar:</strong> Adalat Xudaybergenova, <span class="text-rasset font-semibold">Sevinch Fatilloyeva</span>, Dilfuza Abdullayeva · Toshkent davlat iqtisodiyot universiteti («Jahon iqtisodiyoti va XIM» kafedrasi)
+        </p>
+
+        <p class="text-base text-shokolad/90 leading-relaxed mb-6">
+          Maqolada Oʻzbekiston iqtisodiyotining birlamchi, ikkilamchi, uchlamchi va toʻrtlamchi tarmoqlaridagi gender tengligi holati, ish haqi tafovuti, kasbiy stereotiplarning mehnat bozoriga taʼsiri hamda talabalar oʻrtasida oʻtkazilgan sotsiologik soʻrovnoma natijalari tahlil qilingan.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 p-5 rounded-xl bg-qaymoq border border-borderwarm mb-6">
+          <div>
+            <div class="font-serif text-2xl font-semibold text-rasset">+29%</div>
+            <p class="text-xs text-shokolad/75 mt-1">Ayollarning iqtisodiyotdagi teng ishtiroki hisobiga milliy daromad oʻsish salohiyati</p>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-semibold text-rasset">83,3%</div>
+            <p class="text-xs text-shokolad/75 mt-1">Soʻrovnomada teng mehnat haqi tamoyilini qoʻllab-quvvatlagan respondentlar ulushi</p>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-semibold text-rasset">100%</div>
+            <p class="text-xs text-shokolad/75 mt-1">Soʻrovnoma ishtirokchilarining ayol rahbarlarga nisbatan ijobiy munosabati</p>
+          </div>
+        </div>
+
+        <button onclick="document.getElementById('articleModal').classList.remove('hidden')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-rasset text-qaymoq text-sm font-medium hover:bg-espresso transition-colors cursor-pointer">
+          <span>Batafsil annotatsiya va xulosalar</span>
+          <span aria-hidden="true">→</span>
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 · Ish tajribasi -->
+  <section id="tajriba" class="py-16 px-6 border-b border-borderwarm">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.2em] text-oxra font-semibold mb-2">04 · Amaliy tajriba</p>
+      <h2 class="font-serif text-2xl sm:text-3xl text-rasset font-semibold mb-6">
+        Ish tajribasi
+      </h2>
+
+      <div class="bg-white border border-borderwarm rounded-2xl p-6 sm:p-7 flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <div class="md:w-1/3">
+          <span class="inline-block text-xs px-2.5 py-1 rounded-md bg-sand text-oxra font-medium mb-2">Toʻliq boʻlmagan bandlik</span>
+          <h3 class="font-serif text-xl font-semibold text-espresso">Uzum Bank</h3>
+          <p class="text-sm text-rasset font-medium mt-0.5">Call-markaz operatori</p>
+        </div>
+
+        <div class="md:w-2/3 text-sm text-shokolad/85 leading-relaxed space-y-2">
+          <p>
+            Bank mahsulotlari va xizmatlari boʻyicha mijozlarga maslahat berish, qoʻngʻiroqlar va onlayn-chatlar orqali kiruvchi murojaatlarni qabul qilish hamda yuzaga kelgan savollarni tezkor hal etishda koʻmaklashish.
+          </p>
+          <p class="text-shokolad/70">
+            Xizmat koʻrsatish standartlariga rioya qilgan holda katta hajmdagi murojaatlar bilan ishlash orqali ishbilarmonlik muloqoti va koʻp vazifalilik koʻnikmalari mustahkamlandi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · Bog'lanish -->
+  <section id="aloqa" class="py-20 px-6 uzbek-girih-sand">
+    <div class="max-w-4xl mx-auto bg-white border border-borderwarm rounded-3xl p-7 sm:p-10 shadow-sm">
+      <p class="text-xs uppercase tracking-[0.2em] text-oxra font-semibold mb-2">05 · Bogʻlanish</p>
+      <h2 class="font-serif italic text-3xl sm:text-4xl text-espresso font-semibold mb-3">
+        Suhbatlashamiz
+      </h2>
+      <p class="text-sm sm:text-base text-shokolad/80 max-w-xl mb-8">
+        Ilmiy hamkorlik, tadqiqotlar yoki kasbiy takliflar yuzasidan quyidagi aloqa vositalari orqali murojaat qilishingiz mumkin.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="bg-qaymoq border border-borderwarm rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-oxra font-semibold">Elektron pochta</span>
+            <a href="mailto:sevinchfatullayeva717@gmail.com" class="block mt-2 text-sm font-medium text-espresso break-all hover:text-rasset transition-colors">
+              sevinchfatullayeva717@gmail.com
+            </a>
+          </div>
+          <button onclick="copyText('sevinchfatullayeva717@gmail.com', this)" class="mt-4 self-start text-xs text-rasset hover:text-espresso underline underline-offset-4 cursor-pointer">
+            Nusxa olish
+          </button>
+        </div>
+
+        <div class="bg-qaymoq border border-borderwarm rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-oxra font-semibold">Telegram</span>
+            <a href="https://t.me/sssevvf" target="_blank" rel="noopener noreferrer" class="block mt-2 text-sm font-medium text-espresso hover:text-rasset transition-colors">
+              @sssevvf ↗
+            </a>
+          </div>
+          <button onclick="copyText('@sssevvf', this)" class="mt-4 self-start text-xs text-rasset hover:text-espresso underline underline-offset-4 cursor-pointer">
+            Nusxa olish
+          </button>
+        </div>
+
+        <div class="bg-qaymoq border border-borderwarm rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-oxra font-semibold">Telefon</span>
+            <a href="tel:+998918231070" class="block mt-2 text-sm font-medium text-espresso hover:text-rasset transition-colors">
+              +998 91 823 10 70
+            </a>
+          </div>
+          <button onclick="copyText('+998918231070', this)" class="mt-4 self-start text-xs text-rasset hover:text-espresso underline underline-offset-4 cursor-pointer">
+            Nusxa olish
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-borderwarm flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-shokolad/65">
+        <span>© 2026 Sevinch Fatilloyeva</span>
+        <span>Xalqaro iqtisodiyot · Tadqiqot va tahlil</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maqola modal oynasi -->
+  <div id="articleModal" class="hidden fixed inset-0 z-50 bg-shokolad/60 backdrop-blur-sm flex items-center justify-center p-4" onclick="if(event.target===this)this.classList.add('hidden')">
+    <div class="bg-qaymoq border border-borderwarm rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <span class="text-xs uppercase tracking-widest text-oxra font-semibold">Muhandislik va iqtisodiyot · № 5 (2025)</span>
+        <button onclick="document.getElementById('articleModal').classList.add('hidden')" class="text-shokolad/60 hover:text-espresso text-xl leading-none cursor-pointer" aria-label="Yopish">✕</button>
+      </div>
+
+      <h3 class="font-serif text-2xl text-espresso font-semibold mb-3">
+        Состояние гендерного равенства в экономических секторах и влияние стереотипов на рынок труда (с фокусом на Узбекистан)
+      </h3>
+      <p class="text-xs text-shokolad/75 mb-5">
+        Mualliflar: Adalat Xudaybergenova, Sevinch Fatilloyeva, Dilfuza Abdullayeva · TDIU · 710–717-betlar
+      </p>
+
+      <div class="space-y-4 text-sm text-shokolad/90 leading-relaxed">
+        <div>
+          <h4 class="font-semibold text-rasset mb-1">Annotatsiya</h4>
+          <p>
+            Ushbu maqola Oʻzbekistondagi vaziyatga eʼtibor qaratgan holda iqtisodiyot tarmoqlaridagi gender tengligining hozirgi holatini tahlil qiladi. Tahlil ish haqi farqi, ayollar uchun cheklangan martaba imkoniyatlari va stereotiplarning mehnat bozoriga taʼsirini oʻz ichiga oladi.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-rasset mb-1">Tadqiqot metodologiyasi va manbalar</h4>
+          <p>
+            Tadqiqotda Oʻzbekiston Statistika agentligi, Jahon banki (2024), Xalqaro mehnat tashkiloti (XMT, 2020) va Osiyo taraqqiyot banki (OTB, 2018) maʼlumotlari hamda 1-kurs talabalari oʻrtasida «Gender stereotiplari» mavzusida oʻtkazilgan sotsiologik soʻrovnoma natijalari qoʻllanilgan.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-rasset mb-1">Asosiy taklif va xulosalar</h4>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Taʼlim va STEM yoʻnalishlarida xotin-qizlar ishtirokini kengaytirish orqali yuqori daromadli sohalarga kirish imkoniyatlarini oshirish;</li>
+            <li>Kasbiy tanlov va rahbarlik lavozimlarida stereotiplarni kamaytirishga qaratilgan dasturlarni qoʻllab-quvvatlash;</li>
+            <li>Mehnat bozorida teng imkoniyatlar yaratish orqali iqtisodiy oʻsishni jadallashtirish.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-borderwarm flex justify-end">
+        <button onclick="document.getElementById('articleModal').classList.add('hidden')" class="px-5 py-2 rounded-lg bg-rasset text-qaymoq text-sm font-medium hover:bg-espresso transition-colors cursor-pointer">
+          Yopish
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyText(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.textContent;
+        btn.textContent = 'Nusxalandi ✓';
+        setTimeout(() => {
+          btn.textContent = original;
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
